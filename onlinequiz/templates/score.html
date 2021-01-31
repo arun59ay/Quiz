@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <ul class="list-group">
+        <li class="list-group-item active mt-5">Your Score 😊</li>
+
+        {%if score%}
+        {% else %}
+            <p class="text-center mt-5">You have not attempted any quiz yet...!!</p>
+            <a class="btn btn-dark" href="/">Start Quiz</a>
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}
